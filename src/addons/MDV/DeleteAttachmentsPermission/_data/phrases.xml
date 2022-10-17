@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="permission.mdv_dap_mdv_addonshort_permission" version_id="1000070" version_string="1.0.0"><![CDATA[Can delete attachment]]></phrase>
+  <phrase title="permission.mdv_dap_mdv_dap_can_delete" version_id="1000070" version_string="1.0.0"><![CDATA[Can delete attachment]]></phrase>
+  <phrase title="permission_interface.mdv_dap" version_id="1000070" version_string="1.0.0"><![CDATA[[MDV] Delete Attachments Permission]]></phrase>
+</phrases>

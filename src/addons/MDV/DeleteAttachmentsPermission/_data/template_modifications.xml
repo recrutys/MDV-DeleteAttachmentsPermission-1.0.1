@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="helper_attach_upload" modification_key="mdv_dap_deleteButton" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[			<span class="file-delete">
+				<xf:if is="$noJsFallback">
+					<xf:button type="submit" class="button--small button--link" name="delete" value="{$attachment.attachment_id}">
+						<xf:fa icon="fa-trash-alt" />
+						<span class="u-srOnly">{{ phrase('button.delete') }}</span>
+					</xf:button>
+				<xf:else />
+					<a class="file-deleteLink js-attachmentAction"
+						data-action="delete"
+						data-type="{$attachment.type_grouping}"
+						role="button"
+						tabindex="0">
+						<xf:fa icon="fa-trash-alt" />
+						<span class="u-srOnly">{{ phrase('button.delete') }}</span>
+					</a>
+				</xf:if>
+			</span>]]></find>
+    <replace><![CDATA[<xf:if is="{{ $xf.visitor.hasPermission('mdv_dap', 'mdv_dap_can_delete') }}">
+	$0
+</xf:if>]]></replace>
+  </modification>
+</template_modifications>

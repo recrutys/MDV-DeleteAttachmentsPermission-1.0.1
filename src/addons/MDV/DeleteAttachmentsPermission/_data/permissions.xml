@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <permission permission_group_id="mdv_dap" permission_id="mdv_addonshort_permission" permission_type="flag" interface_group_id="mdv_deleteAttachmentsPermission" display_order="1"/>
+  <permission permission_group_id="mdv_dap" permission_id="mdv_dap_can_delete" permission_type="flag" interface_group_id="mdv_dap" display_order="1"/>
+</permissions>
